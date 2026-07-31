@@ -13,6 +13,7 @@
 # 2. Maintainability: If you need to change a value, you can simply update the variable instead of searching and replacing it in multiple places in the script, making it easier to maintain and update the code.
 # 3. Readability: Using descriptive variable names can make the code more readable and easier to understand, especially for complex scripts with many values and operations.
 # 4. Flexibility: Variables can be assigned different values at runtime, allowing for more dynamic and flexible scripts that can adapt to different inputs and conditions.  
+# 5. prevents errors: Using variables can help prevent errors that may occur when hardcoding values in the script, such as typos or inconsistencies in formatting.
 
 # syntax: variable_name="value" 
 # can be accessed using the $ symbol.
