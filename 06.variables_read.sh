@@ -10,7 +10,9 @@
 # syntax: read variable_name
 # can be accessed using the $ symbol.
 
-read "Please enter the first name: " name1
-read "Please enter the second name: " name2
+echo "Please enter the first name: "
+read name1
+echo "Please enter the second name: "
+read name2
 
 echo "$name1, $name2"
