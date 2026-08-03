@@ -10,7 +10,6 @@
 
 # @ - Used to access all the positional parameters passed to a script.
 # * - Used to access all the positional parameters passed to a script as a single string.
-# * - Represents all files in the current directory. (without $)
 # 0 - Represents the name of the script itself.
 # PWD - Represents the current working directory.
 # USER - Represents the username of the current user.
@@ -22,7 +21,6 @@
 
 echo "All positional parameters: $@"
 echo "All positional parameters as a single string: $*"
-echo "All files in the current directory: *"
 echo "Name of the script: $0"
 echo "Current working directory: $PWD"
 echo "Username of the current user: $USER"
