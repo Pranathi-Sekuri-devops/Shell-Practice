@@ -28,6 +28,12 @@ echo $PATH
 
 echo "course: $course"
 
+# declaring env variable in .bashrc file
+#---------------------------------
+# we can also declare environment variables in the .bashrc file, which is a script that is executed
+#  whenever a new terminal session is started. 
+# This allows us to set environment variables that are persistent across terminal sessions and can be 
+# accessed by any script or program that is run in the terminal. 
 
-
+# check notes 
 
