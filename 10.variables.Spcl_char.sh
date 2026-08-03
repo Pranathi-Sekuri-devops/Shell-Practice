@@ -10,7 +10,6 @@
 
 # @ - Used to access all the positional parameters passed to a script.
 # * - Represents all files in the current directory.
-# ! - Used to access the process ID of the last background command.
 # 0 - Represents the name of the script itself.
 # PWD - Represents the current working directory.
 # USER - Represents the username of the current user.
@@ -18,10 +17,10 @@
 # $ - Represents the process ID of the current shell.
 # ? - Represents a single character in a filename.
 # # - Used to get the length of a variable's value. 
+# ! - Used to access the process ID of the last background command.
 
 echo "All positional parameters: $@"
 echo "All files in the current directory: $*"
-echo "Process ID of the last background command: $!"
 echo "Name of the script: $0"
 echo "Current working directory: $PWD"
 echo "Username of the current user: $USER"
@@ -29,4 +28,6 @@ echo "Home directory of the current user: $HOME"
 echo "Process ID of the current shell: $$"
 echo "A single character in a filename: $?"
 echo "Length of a variable's value: ${#USER}"
-
+sleep 5 &  
+# Run a background command (sleep for 5 seconds)
+echo "Process ID of the last background command: $!"
