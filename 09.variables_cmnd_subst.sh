@@ -17,9 +17,10 @@ echo "The current date and time is: $Date"
 # which is then printed to the console using the echo command.
 
 start_time=$(date +%s)
-sleep 10
+sleep 5
 end_time=$(date +%s)
 execution_time=$((end_time-start_time))
+echo "Execution time: $execution_time seconds"
 # the above code calculates the execution time of a script by capturing the start and end times in seconds
 # The difference between the end time and start time 
 # is then calculated and stored in the execution_time variable, which can be used for performance analysis
