@@ -27,7 +27,6 @@ echo "Username of the current user: $USER"
 echo "Home directory of the current user: $HOME"
 echo "Process ID of the current shell: $$"
 echo "exit status: $?"
-echo "Single character in a filename: ?"
 echo "Length of a variable's value: ${#USER}"
 sleep 5 &  
 # Run a background command (sleep for 5 seconds)
