@@ -19,6 +19,15 @@ echo $PATH
 # The exact value of the PATH variable may vary depending on the operating system and the user's 
 # configuration, but it typically includes directories such as /usr/local/bin, /usr/bin, and /bin.
 
+# accessing environment variables in a script
+#---------------------------------------------  
+
+# i declared a new environment variable called course and assigned it a value of "devsecops with aws" 
+# in the terminal using the following command:
+# export course="devsecops with aws"
+
+echo "course: $course"
+
 
 
 
