@@ -43,13 +43,16 @@ echo "area of a circle is : $area"
 
 # To perform calculations with floating-point numbers, you can use the `bc` command or `awk`.
 # bc command is a command-line calculator that supports floating-point arithmetic.
+# how to install bc command in my system?
+# For Red Hat/CentOS-based systems, you can install it using:
+# sudo dnf install bc 
 # echo "$pi * $radius * $radius" - This part generates the expression to calculate
 # the area of a circle using the formula π * r^2, where $pi is the value of pi and $radius is the radius 
 # of the circle.
 # | bc - This part pipes the expression to the `bc` command, which evaluates the
 # expression and returns the result. The result is then stored in the variable `area`.
 
-
+   
 # 4. Boolean: Represents true or false values (not a native data type in shell scripting,
 #    but can be simulated using integers or strings).
 # eg : is_valid=true or is_valid=false
@@ -84,7 +87,7 @@ echo " total family members : ${#fam[@]}"
 # 6. Associative Array: A collection of key-value pairs, where each key is unique and maps to a value.
 # eg : declare -A colors=( ["red"]="#FF0000" ["green"]="#00FF00" ["blue"]="#0000FF" )
 
-emp=([name]="Malar" [age]=26 [dept]="IT")
+declare -A emp=([name]="Malar" [age]=26 [dept]="IT")
 echo "Employee Name: ${emp[name]}"
 echo "Employee Age: ${emp[age]}"
 echo "Employee Department: ${emp[dept]}"
