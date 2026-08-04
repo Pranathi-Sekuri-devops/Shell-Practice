@@ -34,9 +34,20 @@ echo " the sum is : $sum + $name1"
 # eg : pi=3.14
 
 pi=3.14
+
+echo "Value of pi: $pi"
+# it will take 3.14 as it is a string value, not a float value.
 radius=5
-area=$((pi*radius*radius))
+area=$(echo "$pi * $radius * $radius" | bc)
 echo "area of a circle is : $area"
+
+# To perform calculations with floating-point numbers, you can use the `bc` command or `awk`.
+# bc command is a command-line calculator that supports floating-point arithmetic.
+# echo "$pi * $radius * $radius" - This part generates the expression to calculate
+# the area of a circle using the formula π * r^2, where $pi is the value of pi and $radius is the radius 
+# of the circle.
+# | bc - This part pipes the expression to the `bc` command, which evaluates the
+# expression and returns the result. The result is then stored in the variable `area`.
 
 
 # 4. Boolean: Represents true or false values (not a native data type in shell scripting,
