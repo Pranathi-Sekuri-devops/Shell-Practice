@@ -73,6 +73,8 @@
 # version-4
 # ----------
 
+# running the script with sudo
+
 user=$(id -u)
 
 if [ $user -ne 0 ]; then 
