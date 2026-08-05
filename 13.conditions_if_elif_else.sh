@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if-elif-else
+#if-elif-else
 #-------------------
 # We can use if-elif-else statements to execute different blocks of code depending on multiple conditions.
 
