@@ -99,7 +99,7 @@
 # even though ran with sudo, due to typo in command, error thrown. as that command not executed properly,
 #  exit status  will be 1. so, error msg triggered. 
 
-# version-4
+# version-5
 # ----------
 
 # running the script with sudo
@@ -118,5 +118,18 @@ if [ $? -ne 0 ]; then
 else
     echo " mysql is successfully installed ! "
 fi 
+
+# 34.203.245.78 | 172.31.23.160 | t3.micro | https://github.com/Pranathi-Sekuri-devops/Shell-Practice.git
+# [ ec2-user@ip-172-31-23-160 ~/Shell-Practice ]$ sudo sh 15.installation_mysql.sh
+# Last metadata expiration check: 0:56:51 ago on Wed Aug  5 13:17:41 2026.
+# Dependencies resolved.
+# ........
+# ........
+# Installed:
+#   mariadb-connector-c-config-3.2.6-1.el9_0.noarch                  mysql-8.0.46-1.el9_8.x86_64                  mysql-common-8.0.46-1.el9_8.x86_64
+
+# Complete!
+#  mysql is successfully installed !
+
 
 
