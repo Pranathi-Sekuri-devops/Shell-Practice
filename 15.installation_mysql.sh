@@ -49,17 +49,42 @@
 # version-3
 # ----------
 
+# user=$(id -u)
+
+# if [ $user -ne 0 ]; then 
+#     echo " ERROR : user should have root previleges "
+#     exit 1 # stopping script from proceeding further when error is encountered
+# fi
+
+# dnf install mysql -y
+
+# if [ $? -ne 0 ]; then
+#     echo " ERROR : mysql installation is failed "
+# else
+#     echo " mysql is successfully installed ! "
+# fi # closed if 
+
+# 34.203.245.78 | 172.31.23.160 | t3.micro | https://github.com/Pranathi-Sekuri-devops/Shell-Practice.git
+# [ ec2-user@ip-172-31-23-160 ~/Shell-Practice ]$ sh 15.installation_mysql.sh
+#  ERROR : user should have root previleges
+
+# code exited when first error is occured.
+
+# version-4
+# ----------
+
 user=$(id -u)
 
 if [ $user -ne 0 ]; then 
     echo " ERROR : user should have root previleges "
-    exit 1 # stopping script from proceeding further when error is encountered
+    exit 1 
 fi
 
-dnf install mysql -y
+dnf installl mysqll -y # intentionally gave mistakes 
 
 if [ $? -ne 0 ]; then
     echo " ERROR : mysql installation is failed "
 else
     echo " mysql is successfully installed ! "
 fi # closed if 
+
