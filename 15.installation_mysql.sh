@@ -131,5 +131,15 @@ fi
 # Complete!
 #  mysql is successfully installed !
 
+# if same script ran again, 
+
+# 34.203.245.78 | 172.31.23.160 | t3.micro | https://github.com/Pranathi-Sekuri-devops/Shell-Practice.git
+# [ ec2-user@ip-172-31-23-160 ~/Shell-Practice ]$ sudo sh 15.installation_mysql.sh
+# Last metadata expiration check: 1:01:32 ago on Wed Aug  5 13:17:41 2026.
+# Package mysql-8.0.46-1.el9_8.x86_64 is already installed.
+# Dependencies resolved.
+# Nothing to do.
+# Complete!
+#  mysql is successfully installed !
 
 
