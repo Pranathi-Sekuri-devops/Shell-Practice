@@ -26,19 +26,19 @@
 # version-2
 # ----------
 
-user=$(id -u)
+# user=$(id -u)
 
-if [ $user -ne 0 ]; then # corrected if syntax
-    echo " ERROR : user should have root previleges "
-fi
+# if [ $user -ne 0 ]; then # corrected if syntax
+#     echo " ERROR : user should have root previleges "
+# fi
 
-dnf install mysql -y
+# dnf install mysql -y
 
-if [ $? -ne 0 ]; then
-    echo " ERROR : mysql installation is failed "
-else
-    echo " mysql is successfully installed ! "
-fi # closed if 
+# if [ $? -ne 0 ]; then
+#     echo " ERROR : mysql installation is failed "
+# else
+#     echo " mysql is successfully installed ! "
+# fi # closed if 
 
 # 34.203.245.78 | 172.31.23.160 | t3.micro | https://github.com/Pranathi-Sekuri-devops/Shell-Practice.git
 # [ ec2-user@ip-172-31-23-160 ~/Shell-Practice ]$ sh 15.installation_mysql.sh
