@@ -22,3 +22,6 @@ else
     echo "the no is less than or equal to 10"
 fi
 
+# -gt : stands for "greater than" and is used to compare two numbers.
+# -lt : stands for "less than" and is used to compare two numbers.
+# -eq : stands for "equal to" and is used to compare two numbers.
