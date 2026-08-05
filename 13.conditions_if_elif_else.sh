@@ -5,6 +5,7 @@
 # We can use if-elif-else statements to execute different blocks of code depending on multiple conditions.
 
 # syntax:
+# --------
 # if [ condition1 ]; then
 #     # code to execute if condition1 is true
 # elif [ condition2 ]; then
