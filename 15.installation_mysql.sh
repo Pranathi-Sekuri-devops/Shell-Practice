@@ -30,6 +30,7 @@ user=$(id -u)
 
 if [ $user -ne 0 ]; then # corrected if syntax
     echo " ERROR : user should have root previleges "
+fi
 
 dnf install mysql -y
 
