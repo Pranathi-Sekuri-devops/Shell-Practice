@@ -62,13 +62,42 @@
 #     echo " ERROR : mysql installation is failed "
 # else
 #     echo " mysql is successfully installed ! "
-# fi # closed if 
+# fi 
 
 # 34.203.245.78 | 172.31.23.160 | t3.micro | https://github.com/Pranathi-Sekuri-devops/Shell-Practice.git
 # [ ec2-user@ip-172-31-23-160 ~/Shell-Practice ]$ sh 15.installation_mysql.sh
 #  ERROR : user should have root previleges
 
 # code exited when first error is occured.
+
+# version-4
+# ----------
+
+# running the script with sudo
+
+# user=$(id -u)
+
+# if [ $user -ne 0 ]; then 
+#     echo " ERROR : user should have root previleges "
+#     exit 1 
+# fi
+
+# dnf installl mysqll -y # intentionally gave mistakes 
+
+# if [ $? -ne 0 ]; then
+#     echo " ERROR : mysql installation is failed "
+# else
+#     echo " mysql is successfully installed ! "
+# fi 
+
+# 34.203.245.78 | 172.31.23.160 | t3.micro | https://github.com/Pranathi-Sekuri-devops/Shell-Practice.git
+# [ ec2-user@ip-172-31-23-160 ~/Shell-Practice ]$ sudo sh 15.installation_mysql.sh
+# No such command: installl. Please use /bin/dnf --help
+# It could be a DNF plugin command, try: "dnf install 'dnf-command(installl)'"
+#  ERROR : mysql installation is failed
+
+# even though ran with sudo, due to typo in command, error thrown. as that command not executed properly,
+#  exit status  will be 1. so, error msg triggered. 
 
 # version-4
 # ----------
@@ -82,11 +111,12 @@ if [ $user -ne 0 ]; then
     exit 1 
 fi
 
-dnf installl mysqll -y # intentionally gave mistakes 
+dnf install mysql -y # corrected
 
 if [ $? -ne 0 ]; then
     echo " ERROR : mysql installation is failed "
 else
     echo " mysql is successfully installed ! "
-fi # closed if 
+fi 
+
 
