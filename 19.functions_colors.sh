@@ -19,7 +19,6 @@ check()
         validate $? $2
     else
         echo -e " $Y $2 is already installed ! $W"
-        exit 1
     fi
 }
 
