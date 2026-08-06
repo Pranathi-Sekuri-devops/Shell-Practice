@@ -14,7 +14,7 @@ logs_folder="/var/log/shellscript"
 script_name=$(echo $0 | cut -d "." -f1) # removing .sh part from the filename 20.functions_logs.sh 
 log_file="$logs_folder/$script_name.log"
 
-mkdir -p $logs_folder &>>$log_file # -p will check if dir already exists, else it creates. without -p if dir already exists, it throws an error.
+mkdir -p $logs_folder &>> $log_file # -p will check if dir already exists, else it creates. without -p if dir already exists, it throws an error.
 echo "script execution started at : $(date)"
 
 if [ $user -ne 0 ]; then
@@ -26,7 +26,7 @@ check()
 {
     if [ $1 -ne 0 ]; then
         echo -e " $G Installing $2 ... $W"
-        dnf install $2 -y &>>$log_file
+        dnf install $2 -y &>> $log_file
         validate $? $2
     else
         echo -e " $Y $2 is already installed ! $W"
@@ -42,11 +42,11 @@ validate()
     fi
 }
 
-dnf list installed mysql &>>$log_file
+dnf list installed mysql &>> $log_file
 check $? "mysql" 
 
-dnf list installed nginx &>>$log_file
+dnf list installed nginx &>> $log_file
 check $? "nginx" 
 
-dnf list installed python3 &>>$log_file
+dnf list installed python3 &>> $log_file
 check $? "python3" 
