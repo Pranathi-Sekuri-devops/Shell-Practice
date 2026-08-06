@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# version - 4
+# ------------
+
 user=$(id -u)
 R="\e[31m"
 G="\e[32m"
@@ -40,5 +43,3 @@ check $? "nginx"
 dnf list installed python3
 check $? "python3" 
 
-
-# as already 3 packaged got installed
