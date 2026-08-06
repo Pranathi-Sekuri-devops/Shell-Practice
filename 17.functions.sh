@@ -38,7 +38,7 @@
 # almost 10 lines of code got reduced now. 
 # readability and reusability is achieved. performance is same.
 
-# version -2
+# version -3
 # -----------
 
 user=$(id -u)
