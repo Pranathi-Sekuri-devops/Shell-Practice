@@ -35,5 +35,6 @@ validate $? "mongodb-mongosh"
 dnf install python-3 -y
 validate $? "python-3"
 
-# almost 10 lines of code got reduced now. readability and reusability is achieved. performance is same.
+# almost 10 lines of code got reduced now. 
+# readability and reusability is achieved. performance is same.
 
