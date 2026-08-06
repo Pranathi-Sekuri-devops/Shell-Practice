@@ -10,7 +10,7 @@ G="\e[32m"
 Y="\e[33m"
 W="\e[0m"
 
-logs_folder= "/var/log/shellscript"
+logs_folder="/var/log/shellscript"
 script_name=$(echo $0 | cut -d "." -f1) # removing .sh part from the filename 20.functions_logs.sh 
 log_file="$logs_folder/$script_name.log"
 
